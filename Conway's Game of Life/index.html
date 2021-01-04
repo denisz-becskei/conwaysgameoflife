@@ -1,0 +1,23 @@
+<style>
+    body {
+        margin: 0;
+    }
+</style>
+<body style=" background: black;">
+<h1 style="color: white; font-family: 'Calibri', serif">Conway's Game of Life</h1>
+<p style="color: white; font-size: 16px; position: relative; top: 0; left: 0; width: 50vw; font-family: 'Calibri', serif">The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
+It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input.<br></p>
+<p style="color: white; font-size: 14px; width: 50vw;">The universe of the Game of Life is an infinite, two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, <em>live</em> or <em>dead</em>. Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent.</p>
+<p style="color: white; font-size: 14px; width: 50vw;">At each step in time, the following transitions occur:</p>
+<ul style="color: white; font-size: 12px; width: 45vw;">
+    <li>Any live cell with fewer than two live neighbours dies, as if by <em>underpopulation</em>.</li>
+    <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+    <li>Any live cell with more than three live neighbours dies, as if by <em>overpopulation</em>.</li>
+    <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by <em>repopulation</em>.</li>
+</ul>
+<p style="color: white; font-size: 14px; width: 50vw;">The simulation is running for a 100 generations.</p>
+<p style="color: white; font-size: 14px;" id="iteration"></p>
+<canvas id="canvas" width="420px" height="420px" style="position: absolute; background: black; margin:20px; border: 2px solid white;"></canvas>
+</body>
+<script src="checks.js"></script>
+<script src="index.js"></script>
